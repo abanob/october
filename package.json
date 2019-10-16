@@ -1,0 +1,40 @@
+{
+  "name": "october",
+  "version": "1.0.0",
+  "description": "october technical test",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "test": "jest",
+    "automation": "jest ./src/tests/automation.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abanob/october.git"
+  },
+  "author": "Abanob Georges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abanob/october/issues"
+  },
+  "homepage": "https://github.com/abanob/october#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.3",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
