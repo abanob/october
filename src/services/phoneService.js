@@ -34,8 +34,7 @@ async function getPhone(placeId) {
 
   const {
     data: {
-      result: {
-        formatted_phone_number: formattedPhoneNumber,
+      result: {        
         international_phone_number: internationalPhoneNumber,
       },
       status,
@@ -46,7 +45,7 @@ async function getPhone(placeId) {
     throw errorFactory(status);
   }
 
-  return formattedPhoneNumber || internationalPhoneNumber;
+  return internationalPhoneNumber;
 }
 
 /**
